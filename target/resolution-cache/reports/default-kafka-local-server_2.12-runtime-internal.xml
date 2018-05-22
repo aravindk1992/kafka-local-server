@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="kafka-local-server_2.12"
+		revision="0.1"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20180522110807"/>
+	<dependencies>
+		<module organisation="io.confluent" name="kafka-schema-registry">
+			<revision name="3.3.0" status="release" pubdate="20180515000303" resolver="Confluent Platform" artresolver="Confluent Platform" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<metadata-artifact status="successful" details="" size="8385" time="1209" location="/Users/aravindr/.ivy2/cache/io.confluent/kafka-schema-registry/ivy-3.3.0.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/io.confluent/kafka-schema-registry/ivy-3.3.0.xml.original" origin-is-local="false" origin-location="http://packages.confluent.io/maven/io/confluent/kafka-schema-registry/3.3.0/kafka-schema-registry-3.3.0.pom"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="kafka-schema-registry" type="jar" ext="jar" status="successful" details="" size="111174" time="4695" location="/Users/aravindr/.ivy2/cache/io.confluent/kafka-schema-registry/jars/kafka-schema-registry-3.3.0.jar">
+						<origin-location is-local="false" location="http://packages.confluent.io/maven/io/confluent/kafka-schema-registry/3.3.0/kafka-schema-registry-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.confluent" name="rest-utils">
+			<revision name="3.3.0" status="release" pubdate="20180515000314" resolver="Confluent Platform" artresolver="Confluent Platform" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<metadata-artifact status="successful" details="" size="3526" time="1128" location="/Users/aravindr/.ivy2/cache/io.confluent/rest-utils/ivy-3.3.0.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/io.confluent/rest-utils/ivy-3.3.0.xml.original" origin-is-local="false" origin-location="http://packages.confluent.io/maven/io/confluent/rest-utils/3.3.0/rest-utils-3.3.0.pom"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry" conf="default, compile, runtime, master" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="rest-utils" type="jar" ext="jar" status="successful" details="" size="46772" time="1557" location="/Users/aravindr/.ivy2/cache/io.confluent/rest-utils/jars/rest-utils-3.3.0.jar">
+						<origin-location is-local="false" location="http://packages.confluent.io/maven/io/confluent/rest-utils/3.3.0/rest-utils-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.8.4" status="release" pubdate="20161014091600" resolver="public" artresolver="public" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="69">
+				<metadata-artifact status="successful" details="" size="1848" time="1333" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.4.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.4"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="3.3.0"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jaxb-annotations" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.0" callerrev="2.8.4"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="successful" details="" size="55785" time="1227" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.8.0" status="release" pubdate="20160704105053" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="successful" details="" size="1848" time="1217" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.0.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/ivy-2.8.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.pom"/>
+				<evicted-by rev="2.8.4"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="2.8.4"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-json-provider">
+			<revision name="2.8.4" status="release" pubdate="20161014004453" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="66">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11853" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/ivy-2.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.8.4/jackson-jaxrs-json-provider-2.8.4.pom"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jackson-jaxrs-json-provider" type="bundle" ext="jar" status="no" details="" size="15807" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.jaxrs/jackson-jaxrs-json-provider/bundles/jackson-jaxrs-json-provider-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.8.4/jackson-jaxrs-json-provider-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.module" name="jackson-module-jaxb-annotations">
+			<revision name="2.8.4" status="release" pubdate="20161013235335" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson-module-jaxb-annotations" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="68">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8193" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/ivy-2.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.8.4/jackson-module-jaxb-annotations-2.8.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-json-provider" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<artifacts>
+					<artifact name="jackson-module-jaxb-annotations" type="bundle" ext="jar" status="no" details="" size="34589" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.module/jackson-module-jaxb-annotations/bundles/jackson-module-jaxb-annotations-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.8.4/jackson-module-jaxb-annotations-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-base">
+			<revision name="2.8.4" status="release" pubdate="20161014004423" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="67">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10948" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/ivy-2.8.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.8.4/jackson-jaxrs-base-2.8.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-json-provider" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jackson-jaxrs-base" type="bundle" ext="jar" status="no" details="" size="30226" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/bundles/jackson-jaxrs-base-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.8.4/jackson-jaxrs-base-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-jaas">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909005821" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="65">
+				<metadata-artifact status="successful" details="" size="2855" time="1322" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-jaas/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-jaas/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-jaas/9.2.19.v20160908/jetty-jaas-9.2.19.v20160908.pom"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jetty-jaas" type="jar" ext="jar" status="successful" details="" size="37757" time="1331" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-jaas/jars/jetty-jaas-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-jaas/9.2.19.v20160908/jetty-jaas-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlets">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909005249" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<metadata-artifact status="successful" details="" size="3847" time="1332" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-servlets/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-servlets/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlets/9.2.19.v20160908/jetty-servlets-9.2.19.v20160908.pom"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jetty-servlets" type="jar" ext="jar" status="successful" details="" size="124596" time="1350" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-servlets/jars/jetty-servlets-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlets/9.2.19.v20160908/jetty-servlets-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-continuation">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004957" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="64">
+				<metadata-artifact status="successful" details="" size="2014" time="1230" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-continuation/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-continuation/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/9.2.19.v20160908/jetty-continuation-9.2.19.v20160908.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlets" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<artifacts>
+					<artifact name="jetty-continuation" type="jar" ext="jar" status="successful" details="" size="16020" time="1227" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-continuation/jars/jetty-continuation-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-continuation/9.2.19.v20160908/jetty-continuation-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-servlet">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004634" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<metadata-artifact status="successful" details="" size="3283" time="1318" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-servlet/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-servlet/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.2.19.v20160908/jetty-servlet-9.2.19.v20160908.pom"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jetty-servlet" type="jar" ext="jar" status="successful" details="" size="115711" time="1311" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-servlet/jars/jetty-servlet-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.2.19.v20160908/jetty-servlet-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-security">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004539" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<metadata-artifact status="successful" details="" size="2777" time="1260" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-security/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-security/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.2.19.v20160908/jetty-security-9.2.19.v20160908.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-jaas" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlet" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<artifacts>
+					<artifact name="jetty-security" type="jar" ext="jar" status="successful" details="" size="95899" time="1343" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-security/jars/jetty-security-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.2.19.v20160908/jetty-security-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-server">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004505" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<metadata-artifact status="successful" details="" size="4102" time="1231" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-server/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-server/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.2.19.v20160908/jetty-server-9.2.19.v20160908.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-security" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jetty-server" type="jar" ext="jar" status="successful" details="" size="420618" time="1563" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-server/jars/jetty-server-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.2.19.v20160908/jetty-server-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-io">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004342" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<metadata-artifact status="successful" details="" size="2288" time="1220" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-io/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.2.19.v20160908/jetty-io-9.2.19.v20160908.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlets" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<artifacts>
+					<artifact name="jetty-io" type="jar" ext="jar" status="successful" details="" size="108325" time="1316" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-io/jars/jetty-io-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.2.19.v20160908/jetty-io-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-http">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004314" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<metadata-artifact status="successful" details="" size="2524" time="1232" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-http/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.2.19.v20160908/jetty-http-9.2.19.v20160908.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlets" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<artifacts>
+					<artifact name="jetty-http" type="jar" ext="jar" status="successful" details="" size="127212" time="1360" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-http/jars/jetty-http-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.2.19.v20160908/jetty-http-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-jmx">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004419" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<metadata-artifact status="successful" details="" size="2733" time="1295" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-jmx/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-jmx/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-jmx/9.2.19.v20160908/jetty-jmx-9.2.19.v20160908.pom"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jetty-jmx" type="jar" ext="jar" status="successful" details="" size="22173" time="1177" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-jmx/jars/jetty-jmx-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-jmx/9.2.19.v20160908/jetty-jmx-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jetty" name="jetty-util">
+			<revision name="9.2.19.v20160908" status="release" pubdate="20160909004244" resolver="public" artresolver="public" homepage="http://www.eclipse.org/jetty" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<metadata-artifact status="successful" details="" size="3597" time="1235" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-9.2.19.v20160908.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-util/ivy-9.2.19.v20160908.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.2.19.v20160908/jetty-util-9.2.19.v20160908.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-jmx" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-http" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-io" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-servlets" conf="compile, runtime" rev="9.2.19.v20160908" rev-constraint-default="9.2.19.v20160908" rev-constraint-dynamic="9.2.19.v20160908" callerrev="9.2.19.v20160908"/>
+				<artifacts>
+					<artifact name="jetty-util" type="jar" ext="jar" status="successful" details="" size="376971" time="1405" location="/Users/aravindr/.ivy2/cache/org.eclipse.jetty/jetty-util/jars/jetty-util-9.2.19.v20160908.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.2.19.v20160908/jetty-util-9.2.19.v20160908.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.servlet" name="javax.servlet-api">
+			<revision name="3.1.0" status="release" pubdate="20130425195239" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://servlet-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="4150" time="0" location="/Users/aravindr/.ivy2/cache/javax.servlet/javax.servlet-api/ivy-3.1.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.pom"/>
+				<caller organisation="org.eclipse.jetty" name="jetty-server" conf="compile, runtime" rev="3.1.0" rev-constraint-default="3.1.0" rev-constraint-dynamic="3.1.0" callerrev="9.2.19.v20160908"/>
+				<artifacts>
+					<artifact name="javax.servlet-api" type="jar" ext="jar" status="no" details="" size="95806" time="0" location="/Users/aravindr/.ivy2/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.1.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.containers" name="jersey-container-servlet">
+			<revision name="2.25" status="release" pubdate="20161208090055" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="35790" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.25/jersey-container-servlet-2.25.pom"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jersey-container-servlet" type="jar" ext="jar" status="no" details="" size="18101" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet/jars/jersey-container-servlet-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.25/jersey-container-servlet-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.containers" name="jersey-container-servlet-core">
+			<revision name="2.25" status="release" pubdate="20161208085034" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="35928" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.25/jersey-container-servlet-core-2.25.pom"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="jersey-container-servlet-core" type="jar" ext="jar" status="no" details="" size="66121" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.containers/jersey-container-servlet-core/jars/jersey-container-servlet-core-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.25/jersey-container-servlet-core-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.confluent" name="common-metrics">
+			<revision name="3.3.0" status="release" pubdate="20180515000233" resolver="Confluent Platform" artresolver="Confluent Platform" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<metadata-artifact status="successful" details="" size="1597" time="817" location="/Users/aravindr/.ivy2/cache/io.confluent/common-metrics/ivy-3.3.0.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/io.confluent/common-metrics/ivy-3.3.0.xml.original" origin-is-local="false" origin-location="http://packages.confluent.io/maven/io/confluent/common-metrics/3.3.0/common-metrics-3.3.0.pom"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="common-metrics" type="jar" ext="jar" status="successful" details="" size="41569" time="1544" location="/Users/aravindr/.ivy2/cache/io.confluent/common-metrics/jars/common-metrics-3.3.0.jar">
+						<origin-location is-local="false" location="http://packages.confluent.io/maven/io/confluent/common-metrics/3.3.0/common-metrics-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.ext" name="jersey-bean-validation">
+			<revision name="2.25" status="release" pubdate="20161208090714" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="36523" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.ext/jersey-bean-validation/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/ext/jersey-bean-validation/2.25/jersey-bean-validation-2.25.pom"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry" conf="default, compile, runtime, master" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="3.3.0"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jersey-bean-validation" type="jar" ext="jar" status="no" details="" size="40612" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.ext/jersey-bean-validation/jars/jersey-bean-validation-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/ext/jersey-bean-validation/2.25/jersey-bean-validation-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.hibernate" name="hibernate-validator">
+			<revision name="5.1.3.Final" status="release" pubdate="20141022084535" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="17423" time="0" location="/Users/aravindr/.ivy2/cache/org.hibernate/hibernate-validator/ivy-5.1.3.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.pom"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="5.1.3.Final" rev-constraint-default="5.1.3.Final" rev-constraint-dynamic="5.1.3.Final" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="hibernate-validator" type="jar" ext="jar" status="no" details="" size="634265" time="0" location="/Users/aravindr/.ivy2/cache/org.hibernate/hibernate-validator/jars/hibernate-validator-5.1.3.Final.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/hibernate/hibernate-validator/5.1.3.Final/hibernate-validator-5.1.3.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.web" name="javax.el">
+			<revision name="2.2.4" status="release" pubdate="20120710133054" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://uel.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="CDDL + GPLv2 with classpath exception" url="http://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="3880" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.web/javax.el/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.pom"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="javax.el" type="jar" ext="jar" status="no" details="" size="117583" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.web/javax.el/jars/javax.el-2.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/web/javax.el/2.2.4/javax.el-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.el" name="javax.el-api">
+			<revision name="2.2.4" status="release" pubdate="20111129153840" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://uel.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="CDDL + GPLv2 with classpath exception" url="http://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="3595" time="0" location="/Users/aravindr/.ivy2/cache/javax.el/javax.el-api/ivy-2.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.pom"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="2.25"/>
+				<caller organisation="org.glassfish.web" name="javax.el" conf="compile, runtime" rev="2.2.4" rev-constraint-default="2.2.4" rev-constraint-dynamic="2.2.4" callerrev="2.2.4"/>
+				<artifacts>
+					<artifact name="javax.el-api" type="jar" ext="jar" status="no" details="" size="38863" time="0" location="/Users/aravindr/.ivy2/cache/javax.el/javax.el-api/jars/javax.el-api-2.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/el/javax.el-api/2.2.4/javax.el-api-2.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml" name="classmate">
+			<revision name="1.0.0" status="release" pubdate="20131015220851" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/cowtowncoder/java-classmate" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3385" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml/classmate/ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.0.0/classmate-1.0.0.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="5.1.3.Final"/>
+				<artifacts>
+					<artifact name="classmate" type="bundle" ext="jar" status="no" details="" size="60282" time="0" location="/Users/aravindr/.ivy2/cache/com.fasterxml/classmate/bundles/classmate-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.logging" name="jboss-logging">
+			<revision name="3.1.3.GA" status="release" pubdate="20130305230119" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jboss.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache License, version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="8438" time="0" location="/Users/aravindr/.ivy2/cache/org.jboss.logging/jboss-logging/ivy-3.1.3.GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="3.1.3.GA" rev-constraint-default="3.1.3.GA" rev-constraint-dynamic="3.1.3.GA" callerrev="5.1.3.Final"/>
+				<artifacts>
+					<artifact name="jboss-logging" type="jar" ext="jar" status="no" details="" size="57183" time="0" location="/Users/aravindr/.ivy2/cache/org.jboss.logging/jboss-logging/jars/jboss-logging-3.1.3.GA.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.core" name="jersey-server">
+			<revision name="2.25" status="release" pubdate="20161208083234" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="36897" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.core/jersey-server/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.25/jersey-server-2.25.pom"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet-core" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="jersey-server" type="jar" ext="jar" status="no" details="" size="940762" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.core/jersey-server/jars/jersey-server-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-server/2.25/jersey-server-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.media" name="jersey-media-jaxb">
+			<revision name="2.25" status="release" pubdate="20161208084054" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="36105" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.25/jersey-media-jaxb-2.25.pom"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="jersey-media-jaxb" type="jar" ext="jar" status="no" details="" size="72753" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.media/jersey-media-jaxb/jars/jersey-media-jaxb-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.25/jersey-media-jaxb-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.core" name="jersey-client">
+			<revision name="2.25" status="release" pubdate="20161208085346" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="35882" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.core/jersey-client/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.25/jersey-client-2.25.pom"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="jersey-client" type="jar" ext="jar" status="no" details="" size="168990" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.core/jersey-client/jars/jersey-client-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-client/2.25/jersey-client-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.core" name="jersey-common">
+			<revision name="2.25" status="release" pubdate="20161208083611" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="36574" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.core/jersey-common/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.25/jersey-common-2.25.pom"/>
+				<caller organisation="org.glassfish.jersey.media" name="jersey-media-jaxb" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-client" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet-core" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="jersey-common" type="jar" ext="jar" status="no" details="" size="715934" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.core/jersey-common/jars/jersey-common-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/core/jersey-common/2.25/jersey-common-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.hk2" name="hk2-locator">
+			<revision name="2.5.0-b30" status="release" pubdate="20161202125516" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="26972" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/hk2-locator/ivy-2.5.0-b30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.5.0-b30/hk2-locator-2.5.0-b30.pom"/>
+				<caller organisation="org.glassfish.jersey.media" name="jersey-media-jaxb" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-common" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-client" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="hk2-locator" type="jar" ext="jar" status="no" details="" size="187290" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/hk2-locator/jars/hk2-locator-2.5.0-b30.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-locator/2.5.0-b30/hk2-locator-2.5.0-b30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.javassist" name="javassist">
+			<revision name="3.20.0-GA" status="release" pubdate="20150625080935" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="3199" time="0" location="/Users/aravindr/.ivy2/cache/org.javassist/javassist/ivy-3.20.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-locator" conf="compile, runtime" rev="3.20.0-GA" rev-constraint-default="3.20.0-GA" rev-constraint-dynamic="3.20.0-GA" callerrev="2.5.0-b30"/>
+				<caller organisation="org.apache.curator" name="curator-test" conf="default, compile, runtime, master" rev="3.15.0-GA" rev-constraint-default="3.15.0-GA" rev-constraint-dynamic="3.15.0-GA" callerrev="2.0.0-incubating"/>
+				<artifacts>
+					<artifact name="javassist" type="bundle" ext="jar" status="no" details="" size="750581" time="0" location="/Users/aravindr/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.20.0-GA.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.15.0-GA" status="release" pubdate="20110711204935" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.javassist.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.html"/>
+				<license name="LGPL 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2972" time="0" location="/Users/aravindr/.ivy2/cache/org.javassist/javassist/ivy-3.15.0-GA.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.pom"/>
+				<evicted-by rev="3.20.0-GA"/>
+				<caller organisation="org.apache.curator" name="curator-test" conf="default, compile, runtime, master" rev="3.15.0-GA" rev-constraint-default="3.15.0-GA" rev-constraint-dynamic="3.15.0-GA" callerrev="2.0.0-incubating"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.hk2" name="hk2-api">
+			<revision name="2.5.0-b30" status="release" pubdate="20161202125442" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="26670" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/hk2-api/ivy-2.5.0-b30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.5.0-b30/hk2-api-2.5.0-b30.pom"/>
+				<caller organisation="org.glassfish.jersey.media" name="jersey-media-jaxb" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-locator" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.5.0-b30"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-common" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-client" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="hk2-api" type="jar" ext="jar" status="no" details="" size="185794" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/hk2-api/jars/hk2-api-2.5.0-b30.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-api/2.5.0-b30/hk2-api-2.5.0-b30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.hk2.external" name="aopalliance-repackaged">
+			<revision name="2.5.0-b30" status="release" pubdate="20161202125357" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="27318" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/ivy-2.5.0-b30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b30/aopalliance-repackaged-2.5.0-b30.pom"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-locator" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.5.0-b30"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-api" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.5.0-b30"/>
+				<artifacts>
+					<artifact name="aopalliance-repackaged" type="jar" ext="jar" status="no" details="" size="14766" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2.external/aopalliance-repackaged/jars/aopalliance-repackaged-2.5.0-b30.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b30/aopalliance-repackaged-2.5.0-b30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.hk2" name="hk2-utils">
+			<revision name="2.5.0-b30" status="release" pubdate="20161202125427" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="26782" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/hk2-utils/ivy-2.5.0-b30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.5.0-b30/hk2-utils-2.5.0-b30.pom"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-locator" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.5.0-b30"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-api" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.5.0-b30"/>
+				<artifacts>
+					<artifact name="hk2-utils" type="jar" ext="jar" status="no" details="" size="134898" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/hk2-utils/jars/hk2-utils-2.5.0-b30.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/hk2-utils/2.5.0-b30/hk2-utils-2.5.0-b30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.validation" name="validation-api">
+			<revision name="1.1.0.Final" status="release" pubdate="20130410090303" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://beanvalidation.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3074" time="0" location="/Users/aravindr/.ivy2/cache/javax.validation/validation-api/ivy-1.1.0.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom"/>
+				<caller organisation="org.hibernate" name="hibernate-validator" conf="compile, runtime" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="5.1.3.Final"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="1.1.0.Final" rev-constraint-default="1.1.0.Final" rev-constraint-dynamic="1.1.0.Final" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="validation-api" type="jar" ext="jar" status="no" details="" size="63777" time="0" location="/Users/aravindr/.ivy2/cache/javax.validation/validation-api/jars/validation-api-1.1.0.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.hk2" name="osgi-resource-locator">
+			<revision name="1.0.1" status="release" pubdate="20110113100007" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<metadata-artifact status="no" details="" size="2926" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.pom"/>
+				<caller organisation="org.glassfish.jersey.media" name="jersey-media-jaxb" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-common" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="osgi-resource-locator" type="jar" ext="jar" status="no" details="" size="20235" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2/osgi-resource-locator/jars/osgi-resource-locator-1.0.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.jersey.bundles.repackaged" name="jersey-guava">
+			<revision name="2.25" status="release" pubdate="20161208091120" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="CDDL+GPL License" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="35791" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/ivy-2.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.25/jersey-guava-2.25.pom"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-common" conf="compile, runtime" rev="2.25" rev-constraint-default="2.25" rev-constraint-dynamic="2.25" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="jersey-guava" type="bundle" ext="jar" status="no" details="" size="971306" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.jersey.bundles.repackaged/jersey-guava/bundles/jersey-guava-2.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.25/jersey-guava-2.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.annotation" name="javax.annotation-api">
+			<revision name="1.2" status="release" pubdate="20130426133829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jcp.org/en/jsr/detail?id=250" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.dev.java.net/nonav/public/CDDL+GPL.html"/>
+				<metadata-artifact status="no" details="" size="4009" time="0" location="/Users/aravindr/.ivy2/cache/javax.annotation/javax.annotation-api/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.pom"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-common" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="javax.annotation-api" type="jar" ext="jar" status="no" details="" size="26366" time="0" location="/Users/aravindr/.ivy2/cache/javax.annotation/javax.annotation-api/jars/javax.annotation-api-1.2.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.ws.rs" name="javax.ws.rs-api">
+			<revision name="2.0.1" status="release" pubdate="20140807080800" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jax-rs-spec.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="CDDL 1.1" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="http://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3897" time="0" location="/Users/aravindr/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/ivy-2.0.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.pom"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-common" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-client" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet-core" conf="compile, runtime" rev="2.0.1" rev-constraint-default="2.0.1" rev-constraint-dynamic="2.0.1" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="javax.ws.rs-api" type="jar" ext="jar" status="no" details="" size="115534" time="0" location="/Users/aravindr/.ivy2/cache/javax.ws.rs/javax.ws.rs-api/jars/javax.ws.rs-api-2.0.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.glassfish.hk2.external" name="javax.inject">
+			<revision name="2.5.0-b30" status="release" pubdate="20161202125351" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="CDDL + GPLv2 with classpath exception" url="https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="27397" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2.external/javax.inject/ivy-2.5.0-b30.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.5.0-b30/javax.inject-2.5.0-b30.pom"/>
+				<caller organisation="org.glassfish.jersey.media" name="jersey-media-jaxb" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.ext" name="jersey-bean-validation" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-locator" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.5.0-b30"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-common" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-server" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.core" name="jersey-client" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<caller organisation="org.glassfish.jersey.containers" name="jersey-container-servlet-core" conf="compile, runtime" rev="2.5.0-b30" rev-constraint-default="2.5.0-b30" rev-constraint-dynamic="2.5.0-b30" callerrev="2.25"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="no" details="" size="5951" time="0" location="/Users/aravindr/.ivy2/cache/org.glassfish.hk2.external/javax.inject/jars/javax.inject-2.5.0-b30.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/glassfish/hk2/external/javax.inject/2.5.0-b30/javax.inject-2.5.0-b30.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.confluent" name="common-config">
+			<revision name="3.3.0" status="release" pubdate="20180515000232" resolver="Confluent Platform" artresolver="Confluent Platform" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<metadata-artifact status="successful" details="" size="1595" time="446" location="/Users/aravindr/.ivy2/cache/io.confluent/common-config/ivy-3.3.0.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/io.confluent/common-config/ivy-3.3.0.xml.original" origin-is-local="false" origin-location="http://packages.confluent.io/maven/io/confluent/common-config/3.3.0/common-config-3.3.0.pom"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry" conf="default, compile, runtime, master" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="common-config" type="jar" ext="jar" status="successful" details="" size="22508" time="430" location="/Users/aravindr/.ivy2/cache/io.confluent/common-config/jars/common-config-3.3.0.jar">
+						<origin-location is-local="false" location="http://packages.confluent.io/maven/io/confluent/common-config/3.3.0/common-config-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.confluent" name="kafka-schema-registry-client">
+			<revision name="3.3.0" status="release" pubdate="20180515000300" resolver="Confluent Platform" artresolver="Confluent Platform" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="25">
+				<metadata-artifact status="successful" details="" size="1353" time="323" location="/Users/aravindr/.ivy2/cache/io.confluent/kafka-schema-registry-client/ivy-3.3.0.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/io.confluent/kafka-schema-registry-client/ivy-3.3.0.xml.original" origin-is-local="false" origin-location="http://packages.confluent.io/maven/io/confluent/kafka-schema-registry-client/3.3.0/kafka-schema-registry-client-3.3.0.pom"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry" conf="default, compile, runtime, master" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="kafka-schema-registry-client" type="jar" ext="jar" status="successful" details="" size="39738" time="666" location="/Users/aravindr/.ivy2/cache/io.confluent/kafka-schema-registry-client/jars/kafka-schema-registry-client-3.3.0.jar">
+						<origin-location is-local="false" location="http://packages.confluent.io/maven/io/confluent/kafka-schema-registry-client/3.3.0/kafka-schema-registry-client-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.confluent" name="common-utils">
+			<revision name="3.3.0" status="release" pubdate="20180515000235" resolver="Confluent Platform" artresolver="Confluent Platform" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<metadata-artifact status="successful" details="" size="1652" time="443" location="/Users/aravindr/.ivy2/cache/io.confluent/common-utils/ivy-3.3.0.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/io.confluent/common-utils/ivy-3.3.0.xml.original" origin-is-local="false" origin-location="http://packages.confluent.io/maven/io/confluent/common-utils/3.3.0/common-utils-3.3.0.pom"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry" conf="default, compile, runtime, master" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<caller organisation="io.confluent" name="common-config" conf="compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<caller organisation="io.confluent" name="common-metrics" conf="compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry-client" conf="compile, runtime" rev="3.3.0" rev-constraint-default="3.3.0" rev-constraint-dynamic="3.3.0" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="common-utils" type="jar" ext="jar" status="successful" details="" size="17898" time="385" location="/Users/aravindr/.ivy2/cache/io.confluent/common-utils/jars/common-utils-3.3.0.jar">
+						<origin-location is-local="false" location="http://packages.confluent.io/maven/io/confluent/common-utils/3.3.0/common-utils-3.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.8.4" status="release" pubdate="20161014092229" resolver="public" artresolver="public" homepage="http://github.com/FasterXML/jackson" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<metadata-artifact status="successful" details="" size="5426" time="1214" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.4.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/ivy-2.8.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-base" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<caller organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-json-provider" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<caller organisation="io.confluent" name="rest-utils" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="3.3.0"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jaxb-annotations" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry-client" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="successful" details="" size="1234984" time="4452" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.8.4" status="release" pubdate="20161014091821" resolver="public" artresolver="public" homepage="https://github.com/FasterXML/jackson-core" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<metadata-artifact status="successful" details="" size="5415" time="1333" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.4.xml" searched="true" original-local-location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/ivy-2.8.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<caller organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-base" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<caller organisation="com.fasterxml.jackson.jaxrs" name="jackson-jaxrs-json-provider" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<caller organisation="com.fasterxml.jackson.module" name="jackson-module-jaxb-annotations" conf="compile, runtime" rev="2.8.4" rev-constraint-default="2.8.4" rev-constraint-dynamic="2.8.4" callerrev="2.8.4"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="successful" details="" size="281079" time="1530" location="/Users/aravindr/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.8.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.avro" name="avro">
+			<revision name="1.8.2" status="release" pubdate="20170507145247" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://avro.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12076" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.avro/avro/ivy-1.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.pom"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry" conf="default, compile, runtime, master" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="3.3.0"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="0.1"/>
+				<caller organisation="io.confluent" name="kafka-schema-registry-client" conf="compile, runtime" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="3.3.0"/>
+				<artifacts>
+					<artifact name="avro" type="bundle" ext="jar" status="no" details="" size="1556863" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.avro/avro/bundles/avro-1.8.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-compress">
+			<revision name="1.8.1" status="release" pubdate="20140509151752" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/proper/commons-compress/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="10390" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.commons/commons-compress/ivy-1.8.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.8.1" rev-constraint-default="1.8.1" rev-constraint-dynamic="1.8.1" callerrev="1.8.2"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="365552" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.commons/commons-compress/jars/commons-compress-1.8.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.tukaani" name="xz">
+			<revision name="1.5" status="release" pubdate="20140308063924" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://tukaani.org/xz/java.html" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Public Domain"/>
+				<metadata-artifact status="no" details="" size="2403" time="0" location="/Users/aravindr/.ivy2/cache/org.tukaani/xz/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/tukaani/xz/1.5/xz-1.5.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.8.2"/>
+				<artifacts>
+					<artifact name="xz" type="jar" ext="jar" status="no" details="" size="99555" time="0" location="/Users/aravindr/.ivy2/cache/org.tukaani/xz/jars/xz-1.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/tukaani/xz/1.5/xz-1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.7" status="release" pubdate="20140816162110" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="4248" time="0" location="/Users/aravindr/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="2.7" rev-constraint-default="2.7" rev-constraint-dynamic="2.7" callerrev="1.8.2"/>
+				<artifacts>
+					<artifact name="paranamer" type="bundle" ext="jar" status="no" details="" size="34604" time="0" location="/Users/aravindr/.ivy2/cache/com.thoughtworks.paranamer/paranamer/bundles/paranamer-2.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
+			<revision name="1.9.13" status="release" pubdate="20130714230750" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2661" time="0" location="/Users/aravindr/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.8.2"/>
+				<artifacts>
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="no" details="" size="780664" time="0" location="/Users/aravindr/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
+			<revision name="1.9.13" status="release" pubdate="20130714230730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2438" time="0" location="/Users/aravindr/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.13.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.pom"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.8.2"/>
+				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.9.13" rev-constraint-default="1.9.13" rev-constraint-dynamic="1.9.13" callerrev="1.9.13"/>
+				<artifacts>
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="no" details="" size="232248" time="0" location="/Users/aravindr/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.13.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kafka" name="kafka_2.12">
+			<revision name="0.10.2.1" status="release" pubdate="20170421221734" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="12209" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.kafka/kafka_2.12/ivy-0.10.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/kafka_2.12/0.10.2.1/kafka_2.12-0.10.2.1.pom"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="0.10.2.1" rev-constraint-default="0.10.2.1" rev-constraint-dynamic="0.10.2.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="kafka_2.12" type="jar" ext="jar" status="no" details="" size="3255174" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.kafka/kafka_2.12/jars/kafka_2.12-0.10.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kafka/kafka_2.12/0.10.2.1/kafka_2.12-0.10.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12">
+			<revision name="1.0.4" status="release" pubdate="20161028191045" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2785" time="0" location="/Users/aravindr/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/ivy-1.0.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="1.0.4" rev-constraint-default="1.0.4" rev-constraint-dynamic="1.0.4" callerrev="0.10.2.1"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.12" type="bundle" ext="jar" status="no" details="" size="204313" time="0" location="/Users/aravindr/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.12/1.0.4/scala-parser-combinators_2.12-1.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.zookeeper" name="zookeeper">
+			<revision name="3.4.9" status="release" pubdate="20160823045506" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4797" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.zookeeper/zookeeper/ivy-3.4.9.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/zookeeper/zookeeper/3.4.9/zookeeper-3.4.9.pom"/>
+				<caller organisation="com.101tec" name="zkclient" conf="compile, runtime" rev="3.4.8" rev-constraint-default="3.4.8" rev-constraint-dynamic="3.4.8" callerrev="0.10"/>
+				<caller organisation="io.confluent" name="common-utils" conf="compile, runtime" rev="3.4.8" rev-constraint-default="3.4.8" rev-constraint-dynamic="3.4.8" callerrev="3.3.0"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="3.4.9" rev-constraint-default="3.4.9" rev-constraint-dynamic="3.4.9" callerrev="0.10.2.1"/>
+				<caller organisation="org.apache.curator" name="curator-test" conf="default, compile, runtime, master" rev="3.4.5" rev-constraint-default="3.4.5" rev-constraint-dynamic="3.4.5" callerrev="2.0.0-incubating"/>
+				<artifacts>
+					<artifact name="zookeeper" type="jar" ext="jar" status="no" details="" size="807277" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.zookeeper/zookeeper/jars/zookeeper-3.4.9.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/zookeeper/zookeeper/3.4.9/zookeeper-3.4.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.4.5" status="release" pubdate="20121118195742" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="3972" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.zookeeper/zookeeper/ivy-3.4.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/zookeeper/zookeeper/3.4.5/zookeeper-3.4.5.pom"/>
+				<evicted-by rev="3.4.9"/>
+				<caller organisation="org.apache.curator" name="curator-test" conf="default, compile, runtime, master" rev="3.4.5" rev-constraint-default="3.4.5" rev-constraint-dynamic="3.4.5" callerrev="2.0.0-incubating"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="3.4.8" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.4.9"/>
+				<caller organisation="com.101tec" name="zkclient" conf="compile, runtime" rev="3.4.8" rev-constraint-default="3.4.8" rev-constraint-dynamic="3.4.8" callerrev="0.10"/>
+				<caller organisation="io.confluent" name="common-utils" conf="compile, runtime" rev="3.4.8" rev-constraint-default="3.4.8" rev-constraint-dynamic="3.4.8" callerrev="3.3.0"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="3.4.9" rev-constraint-default="3.4.9" rev-constraint-dynamic="3.4.9" callerrev="0.10.2.1"/>
+				<caller organisation="org.apache.curator" name="curator-test" conf="default, compile, runtime, master" rev="3.4.5" rev-constraint-default="3.4.5" rev-constraint-dynamic="3.4.5" callerrev="2.0.0-incubating"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.10.5.Final" status="release" pubdate="20151014053124" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="7071" time="0" location="/Users/aravindr/.ivy2/cache/io.netty/netty/ivy-3.10.5.Final.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/io/netty/netty/3.10.5.Final/netty-3.10.5.Final.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="3.10.5.Final" rev-constraint-default="3.10.5.Final" rev-constraint-dynamic="3.10.5.Final" callerrev="3.4.9"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="no" details="" size="1330394" time="0" location="/Users/aravindr/.ivy2/cache/io.netty/netty/bundles/netty-3.10.5.Final.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/io/netty/netty/3.10.5.Final/netty-3.10.5.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.101tec" name="zkclient">
+			<revision name="0.10" status="release" pubdate="20161108113530" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sgroschupf/zkclient" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3715" time="0" location="/Users/aravindr/.ivy2/cache/com.101tec/zkclient/ivy-0.10.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/101tec/zkclient/0.10/zkclient-0.10.pom"/>
+				<caller organisation="io.confluent" name="common-utils" conf="compile, runtime" rev="0.10" rev-constraint-default="0.10" rev-constraint-dynamic="0.10" callerrev="3.3.0"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="0.10" rev-constraint-default="0.10" rev-constraint-dynamic="0.10" callerrev="0.10.2.1"/>
+				<artifacts>
+					<artifact name="zkclient" type="jar" ext="jar" status="no" details="" size="74798" time="0" location="/Users/aravindr/.ivy2/cache/com.101tec/zkclient/jars/zkclient-0.10.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/101tec/zkclient/0.10/zkclient-0.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.yammer.metrics" name="metrics-core">
+			<revision name="2.2.0" status="release" pubdate="20121126151108" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<metadata-artifact status="no" details="" size="4088" time="0" location="/Users/aravindr/.ivy2/cache/com.yammer.metrics/metrics-core/ivy-2.2.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="0.10.2.1"/>
+				<artifacts>
+					<artifact name="metrics-core" type="jar" ext="jar" status="no" details="" size="82123" time="0" location="/Users/aravindr/.ivy2/cache/com.yammer.metrics/metrics-core/jars/metrics-core-2.2.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.jopt-simple" name="jopt-simple">
+			<revision name="5.0.3" status="release" pubdate="20160925111156" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pholser.github.io/jopt-simple" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="The MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4132" time="0" location="/Users/aravindr/.ivy2/cache/net.sf.jopt-simple/jopt-simple/ivy-5.0.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="5.0.3" rev-constraint-default="5.0.3" rev-constraint-dynamic="5.0.3" callerrev="0.10.2.1"/>
+				<artifacts>
+					<artifact name="jopt-simple" type="jar" ext="jar" status="no" details="" size="78175" time="0" location="/Users/aravindr/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-5.0.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kafka" name="kafka-clients">
+			<revision name="0.10.2.1" status="release" pubdate="20170421124240" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3527" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.kafka/kafka-clients/ivy-0.10.2.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/apache/kafka/kafka-clients/0.10.2.1/kafka-clients-0.10.2.1.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="0.10.2.1" rev-constraint-default="0.10.2.1" rev-constraint-dynamic="0.10.2.1" callerrev="0.10.2.1"/>
+				<artifacts>
+					<artifact name="kafka-clients" type="jar" ext="jar" status="no" details="" size="951041" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.kafka/kafka-clients/jars/kafka-clients-0.10.2.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/apache/kafka/kafka-clients/0.10.2.1/kafka-clients-0.10.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-log4j12">
+			<revision name="1.7.21" status="release" pubdate="20160404151150" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<metadata-artifact status="no" details="" size="5401" time="0" location="/Users/aravindr/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.7.21.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.9"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.10.2.1"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.5"/>
+				<artifacts>
+					<artifact name="slf4j-log4j12" type="jar" ext="jar" status="no" details="" size="9988" time="0" location="/Users/aravindr/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6.1" status="release" pubdate="20100705163003" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4321" time="0" location="/Users/aravindr/.ivy2/cache/org.slf4j/slf4j-log4j12/ivy-1.6.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.pom"/>
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.9"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="log4j" name="log4j">
+			<revision name="1.2.17" status="release" pubdate="20120526054339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3544" time="0" location="/Users/aravindr/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/log4j/log4j/1.2.17/log4j-1.2.17.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.2.16" rev-constraint-default="1.2.16" rev-constraint-dynamic="1.2.16" callerrev="3.4.9"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.7.21"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.2.16" rev-constraint-default="1.2.16" rev-constraint-dynamic="1.2.16" callerrev="1.6.1"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile" rev="1.2.16" rev-constraint-default="1.2.16" rev-constraint-dynamic="1.2.15" callerrev="3.4.5"/>
+				<artifacts>
+					<artifact name="log4j" type="bundle" ext="jar" status="no" details="" size="489884" time="0" location="/Users/aravindr/.ivy2/cache/log4j/log4j/bundles/log4j-1.2.17.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.2.16" status="release" pubdate="20100331002544" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3492" time="0" location="/Users/aravindr/.ivy2/cache/log4j/log4j/ivy-1.2.16.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.pom"/>
+				<evicted-by rev="1.2.17"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.2.16" rev-constraint-default="1.2.16" rev-constraint-dynamic="1.2.16" callerrev="3.4.9"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.2.16" rev-constraint-default="1.2.16" rev-constraint-dynamic="1.2.16" callerrev="1.6.1"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile" rev="1.2.16" rev-constraint-default="1.2.16" rev-constraint-dynamic="1.2.15" callerrev="3.4.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.2.15" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.2.16"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.2.16" rev-constraint-default="1.2.16" rev-constraint-dynamic="1.2.16" callerrev="1.6.1"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.2.15" rev-constraint-default="1.2.15" rev-constraint-dynamic="1.2.15" callerrev="3.4.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.21" status="release" pubdate="20160404150802" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<metadata-artifact status="no" details="" size="5293" time="0" location="/Users/aravindr/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.21.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom"/>
+				<caller organisation="com.101tec" name="zkclient" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.10"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.9"/>
+				<caller organisation="io.confluent" name="common-utils" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="3.3.0"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="1.7.21"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="0.10.2.1"/>
+				<caller organisation="io.confluent" name="common-config" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="3.3.0"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.8.2"/>
+				<caller organisation="io.confluent" name="common-metrics" conf="compile, runtime" rev="1.7.21" rev-constraint-default="1.7.21" rev-constraint-dynamic="1.7.21" callerrev="3.3.0"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.1" callerrev="3.4.5"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41071" time="0" location="/Users/aravindr/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.6.4" status="release" pubdate="20111031184537" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4344" time="0" location="/Users/aravindr/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.6.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.pom"/>
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="org.slf4j" name="slf4j-log4j12" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.1" callerrev="1.6.1"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.4" rev-constraint-default="1.6.4" rev-constraint-dynamic="1.6.1" callerrev="3.4.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.7" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.8.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.6.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="com.101tec" name="zkclient" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="0.10"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="3.4.9"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.21"/>
+				<caller organisation="com.yammer.metrics" name="metrics-core" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="2.2.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.1.2.6" status="release" pubdate="20160602134933" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xerial/snappy-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3324" time="0" location="/Users/aravindr/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.1.2.6.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="compile, runtime" rev="1.1.2.6" rev-constraint-default="1.1.2.6" rev-constraint-dynamic="1.1.2.6" callerrev="0.10.2.1"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.1.1.3" rev-constraint-default="1.1.1.3" rev-constraint-dynamic="1.1.1.3" callerrev="1.8.2"/>
+				<artifacts>
+					<artifact name="snappy-java" type="bundle" ext="jar" status="no" details="" size="1056168" time="0" location="/Users/aravindr/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.2.6.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.1.1.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.1.2.6"/>
+				<caller organisation="org.apache.avro" name="avro" conf="default, compile, runtime, master" rev="1.1.1.3" rev-constraint-default="1.1.1.3" rev-constraint-dynamic="1.1.1.3" callerrev="1.8.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.jpountz.lz4" name="lz4">
+			<revision name="1.3.0" status="release" pubdate="20141126154000" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/jpountz/lz4-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2612" time="0" location="/Users/aravindr/.ivy2/cache/net.jpountz.lz4/lz4/ivy-1.3.0.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="compile, runtime" rev="1.3.0" rev-constraint-default="1.3.0" rev-constraint-dynamic="1.3.0" callerrev="0.10.2.1"/>
+				<artifacts>
+					<artifact name="lz4" type="jar" ext="jar" status="no" details="" size="236880" time="0" location="/Users/aravindr/.ivy2/cache/net.jpountz.lz4/lz4/jars/lz4-1.3.0.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/net/jpountz/lz4/lz4/1.3.0/lz4-1.3.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.curator" name="curator-test">
+			<revision name="2.0.0-incubating" status="release" pubdate="20130502022231" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<metadata-artifact status="no" details="" size="7615" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.curator/curator-test/ivy-2.0.0-incubating.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/curator/curator-test/2.0.0-incubating/curator-test-2.0.0-incubating.pom"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.0.0-incubating" rev-constraint-default="2.0.0-incubating" rev-constraint-dynamic="2.0.0-incubating" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="curator-test" type="jar" ext="jar" status="no" details="" size="33765" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.curator/curator-test/jars/curator-test-2.0.0-incubating.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/curator/curator-test/2.0.0-incubating/curator-test-2.0.0-incubating.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="14.0.1" status="release" pubdate="20130314195719" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<metadata-artifact status="no" details="" size="3663" time="0" location="/Users/aravindr/.ivy2/cache/com.google.guava/guava/ivy-14.0.1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/google/guava/guava/14.0.1/guava-14.0.1.pom"/>
+				<caller organisation="org.apache.curator" name="curator-test" conf="default, compile, runtime, master" rev="14.0.1" rev-constraint-default="14.0.1" rev-constraint-dynamic="14.0.1" callerrev="2.0.0-incubating"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="no" details="" size="2189117" time="0" location="/Users/aravindr/.ivy2/cache/com.google.guava/guava/bundles/guava-14.0.1.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/com/google/guava/guava/14.0.1/guava-14.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091013193500" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/atinject/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="70">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2380" time="0" location="/Users/aravindr/.ivy2/cache/javax.inject/javax.inject/ivy-1.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-api" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="2.5.0-b30"/>
+				<caller organisation="org.glassfish.hk2" name="hk2-utils" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="2.5.0-b30"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jboss.netty" name="netty">
+			<revision name="3.2.2.Final" status="release" pubdate="20100830114828" resolver="sbt-chain" artresolver="sbt-chain" evicted="transitive" evicted-reason="" homepage="http://www.jboss.org/netty/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="9463" time="0" location="/Users/aravindr/.ivy2/cache/org.jboss.netty/netty/ivy-3.2.2.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jboss/netty/netty/3.2.2.Final/netty-3.2.2.Final.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="3.2.2.Final" rev-constraint-default="3.2.2.Final" rev-constraint-dynamic="3.2.2.Final" callerrev="3.4.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="0.9.94" status="release" pubdate="20080831074541" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jline.sourceforge.net" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="BSD" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="2842" time="0" location="/Users/aravindr/.ivy2/cache/jline/jline/ivy-0.9.94.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/jline/jline/0.9.94/jline-0.9.94.pom"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="0.9.94" rev-constraint-default="0.9.94" rev-constraint-dynamic="0.9.94" callerrev="3.4.9"/>
+				<caller organisation="org.apache.zookeeper" name="zookeeper" conf="compile, runtime" rev="0.9.94" rev-constraint-default="0.9.94" rev-constraint-dynamic="0.9.94" callerrev="3.4.5"/>
+				<artifacts>
+					<artifact name="jline" type="jar" ext="jar" status="no" details="" size="87325" time="0" location="/Users/aravindr/.ivy2/cache/jline/jline/jars/jline-0.9.94.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/jline/jline/0.9.94/jline-0.9.94.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-math">
+			<revision name="2.2" status="release" pubdate="20110226235444" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/math/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<metadata-artifact status="no" details="" size="6216" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.commons/commons-math/ivy-2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.pom"/>
+				<caller organisation="org.apache.curator" name="curator-test" conf="default, compile, runtime, master" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="2.0.0-incubating"/>
+				<artifacts>
+					<artifact name="commons-math" type="jar" ext="jar" status="no" details="" size="988514" time="0" location="/Users/aravindr/.ivy2/cache/org.apache.commons/commons-math/jars/commons-math-2.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.6" status="release" pubdate="20180427141006" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, master(*), runtime(*), master(compile), compile(*)" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2471" time="0" location="/Users/aravindr/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.1"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.0" rev-constraint-default="2.12.0" rev-constraint-dynamic="2.12.0" callerrev="1.0.4"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="0.10.2.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5267302" time="0" location="/Users/aravindr/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.12.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), default, master(compile), default(compile), master" position="-1">
+				<evicted-by rev="2.12.6"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.0" rev-constraint-default="2.12.0" rev-constraint-dynamic="2.12.0" callerrev="1.0.4"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.1"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="0.10.2.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.12.1" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, master(*), default(compile)" position="-1">
+				<evicted-by rev="2.12.6"/>
+				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="compile, runtime" rev="2.12.0" rev-constraint-default="2.12.0" rev-constraint-dynamic="2.12.0" callerrev="1.0.4"/>
+				<caller organisation="default" name="kafka-local-server_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.1"/>
+				<caller organisation="org.apache.kafka" name="kafka_2.12" conf="default, compile, runtime, master" rev="2.12.1" rev-constraint-default="2.12.1" rev-constraint-dynamic="2.12.1" callerrev="0.10.2.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
